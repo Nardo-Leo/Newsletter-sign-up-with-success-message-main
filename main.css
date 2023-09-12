@@ -1,0 +1,207 @@
+:root {
+  /*Primary*/
+  --tomato:hsl(4, 100%, 67%);
+  /*Neutral*/
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoa-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Charcoa-Grey);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+main {
+  background-color: var(--White);
+  display: flex;
+  padding: 20px;
+  height: 85vh;
+  width: 64vw;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+#subscription {
+  text-align: justify;
+  padding: 30px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.6em;
+  margin-top: 20px;
+}
+
+h3 {
+  margin: 20px 0px 30px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 83%;
+}
+
+.item {
+  display: flex;
+  max-width: 85%;
+  margin: 10px 0px 0px 0px;
+}
+
+.item h4 {
+  font-weight: 400;
+  width: 100%;
+  margin-left: 15px;
+  letter-spacing: 0.6px;
+}
+
+#email {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+}
+
+span {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--tomato);
+  display: none;
+}
+
+#email_field {
+  margin: 5px 0px 5px 0px;
+  width: 83%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: solid 1px var(--Grey);
+  letter-spacing: 2px;
+  outline: none;
+}
+
+#email_field:hover {
+  cursor: pointer;
+  border-color: var(--Grey);
+}
+
+#submit {
+  margin-top: 15px;
+  width: 90%;
+  padding: 17px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: var(--White);
+  background-color: var(--Dark-Slate-Grey);
+  border: none;
+}
+
+#submit:hover {
+  background-color: var(--tomato);
+  box-shadow: 2px 5px 20px var(--tomato);
+  cursor: pointer;
+}
+
+#img_main_mobile {
+  display: none;
+}
+
+#img_main img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  left: 35%;
+  bottom: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: var(--White);
+  }
+  main {
+    background-color: var(--White);
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+  }
+  #subscription {
+    text-align: justify;
+    height: 70%;
+    padding: 30px;
+    display: block;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h3 {
+    margin: 20px 0px 30px 0px;
+    font-size: 1em;
+    max-width: 94%;
+  }
+  .item {
+    max-width: 95%;
+    margin: 10px 0px 0px 0px;
+  }
+  .item h4 {
+    letter-spacing: 0px;
+  }
+  #email {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+  }
+  span {
+    margin-left: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--tomato);
+    display: none;
+  }
+  #email_field {
+    width: 90%;
+  }
+  #submit {
+    width: 100%;
+    margin-top: 5px;
+  }
+  #img_main img {
+    display: none;
+  }
+  #img_main_mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+  }
+  #img_main_mobile img {
+    height: 100%;
+    max-width: 100%;
+    margin: 0px;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    left: 1%;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
